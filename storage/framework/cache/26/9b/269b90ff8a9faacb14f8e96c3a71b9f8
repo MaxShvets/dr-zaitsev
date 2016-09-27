@@ -1,0 +1,19 @@
+1474987168a:1:{s:15:"formElement.htm";a:6:{s:8:"fileName";s:15:"formElement.htm";s:7:"content";s:423:"description = "Fields for form on main page"
+==
+<div class="consultation-form-element">
+    <label for="{{ name }}">{{ label }}</label>
+    {% if elementType == "input"%}
+        <input type="{{ type }}" {% partial "formElementAttributes" name=name label=label %}>
+    {% else %}
+        <textarea {% partial "formElementAttributes" name=name label=label %}></textarea>
+    {% endif %}
+    <div class="errors"></div>
+</div>";s:5:"mtime";i:1470044302;s:6:"markup";s:375:"<div class="consultation-form-element">
+    <label for="{{ name }}">{{ label }}</label>
+    {% if elementType == "input"%}
+        <input type="{{ type }}" {% partial "formElementAttributes" name=name label=label %}>
+    {% else %}
+        <textarea {% partial "formElementAttributes" name=name label=label %}></textarea>
+    {% endif %}
+    <div class="errors"></div>
+</div>";s:4:"code";N;s:11:"description";s:28:"Fields for form on main page";}}

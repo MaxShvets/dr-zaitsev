@@ -1,0 +1,24 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+
+    article_name:
+        label: article name
+        searchable: true
+
+    directory_name:
+        label: directory name
+        searchable: true
+
+    number_of_pages:
+        label: number of pages
+        searchable: true
+
+    image_format:
+        label: image format
+        searchable: true

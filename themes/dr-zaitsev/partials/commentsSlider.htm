@@ -1,0 +1,17 @@
+description = 'slider with comments'
+==
+{% for comment in comments %}
+    <div class="slide-part">
+        <div class="portrait-block">
+            <div class="portrait">
+                <img src="{{ comment['image'] }}">
+            </div>
+            <p class="name">{{ comment['name'] }}</p>
+            <p class="description">
+                {{ comment['description'] }}
+            </p>
+            <div class="description-underscore"></div>
+        </div>
+    </div>
+{% endfor %}
+<div style="clear: both;"></div>

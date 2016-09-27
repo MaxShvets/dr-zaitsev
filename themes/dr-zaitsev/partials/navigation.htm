@@ -1,0 +1,7 @@
+description = 'navigation bar'
+==
+<ul class="navigation clearfix">
+    {% for item in items %}
+        <li class="clickable" data-to="{{ item[1] }}">{{ item[0] }}</li>
+    {% endfor %}
+</ul>

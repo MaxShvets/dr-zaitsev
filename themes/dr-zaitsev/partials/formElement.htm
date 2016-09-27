@@ -1,0 +1,11 @@
+description = "Fields for form on main page"
+==
+<div class="consultation-form-element">
+    <label for="{{ name }}">{{ label }}</label>
+    {% if elementType == "input"%}
+        <input type="{{ type }}" {% partial "formElementAttributes" name=name label=label %}>
+    {% else %}
+        <textarea {% partial "formElementAttributes" name=name label=label %}></textarea>
+    {% endif %}
+    <div class="errors"></div>
+</div>

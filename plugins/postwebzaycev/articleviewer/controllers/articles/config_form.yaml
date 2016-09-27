@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Article
+
+# Model Form Field configuration
+form: $/postwebzaycev/articleviewer/models/article/fields.yaml
+
+# Model Class name
+modelClass: PostwebZaycev\ArticleViewer\Models\Article
+
+# Default redirect location
+defaultRedirect: postwebzaycev/articleviewer/articles
+
+# Create page
+create:
+    title: Create Article
+    redirect: postwebzaycev/articleviewer/articles/update/:id
+    redirectClose: postwebzaycev/articleviewer/articles
+
+# Update page
+update:
+    title: Edit Article
+    redirect: postwebzaycev/articleviewer/articles
+    redirectClose: postwebzaycev/articleviewer/articles
+
+# Preview page
+preview:
+    title: Preview Article

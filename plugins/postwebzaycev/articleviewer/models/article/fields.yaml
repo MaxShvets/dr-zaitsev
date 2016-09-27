@@ -1,0 +1,36 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    article_name:
+        label: Article name
+        required: true
+
+    number_of_pages:
+        label: Number of pages
+        span: left
+        required: true
+
+    place_of_creation:
+        label: Place of creation
+        span: right
+
+    image_format:
+        label: Image format
+        span: left
+        type: dropdown
+        options:
+            gif: gif
+            png: png
+            jpg: jpg
+
+    date_of_creation:
+        label: Created
+        span: right
+        type: datepicker
+
+    explicit:
+        label: Explicit
+        type: checkbox
+        default: false
