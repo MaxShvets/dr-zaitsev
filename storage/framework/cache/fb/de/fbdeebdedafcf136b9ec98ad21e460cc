@@ -1,3 +1,0 @@
-1475193635a:1:{s:25:"formElementAttributes.htm";a:6:{s:8:"fileName";s:25:"formElementAttributes.htm";s:7:"content";s:151:"description = "Input element attributes used in formElement partial"
-==
-id="{{ name }}" name="{{ name }}" placeholder="{{ label }}" class="round-edged"";s:5:"mtime";i:1469796670;s:6:"markup";s:79:"id="{{ name }}" name="{{ name }}" placeholder="{{ label }}" class="round-edged"";s:4:"code";N;s:11:"description";s:52:"Input element attributes used in formElement partial";}}
