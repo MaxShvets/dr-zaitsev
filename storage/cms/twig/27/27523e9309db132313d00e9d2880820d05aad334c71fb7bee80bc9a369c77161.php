@@ -21,7 +21,7 @@ class __TwigTemplate_06fde602e5328e07ff672aa9614a42e4a0205f87152e776737839d7f47d
         foreach ($context['_seq'] as $context["_key"] => $context["comment"]) {
             // line 2
             echo "    <div class=\"slide-part\">
-        <div class=\"portrait-block\">
+        <div class=\"portrait-block has-shadow\">
             <div class=\"portrait\">
                 <img src=\"";
             // line 5
@@ -38,7 +38,6 @@ class __TwigTemplate_06fde602e5328e07ff672aa9614a42e4a0205f87152e776737839d7f47d
             echo twig_escape_filter($this->env, $this->getAttribute($context["comment"], "description", array(), "array"), "html", null, true);
             echo "
             </p>
-            <div class=\"description-underscore\"></div>
         </div>
     </div>
 ";
@@ -46,7 +45,7 @@ class __TwigTemplate_06fde602e5328e07ff672aa9614a42e4a0205f87152e776737839d7f47d
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['comment'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 15
+        // line 14
         echo "<div style=\"clear: both;\"></div>";
     }
 
@@ -62,12 +61,12 @@ class __TwigTemplate_06fde602e5328e07ff672aa9614a42e4a0205f87152e776737839d7f47d
 
     public function getDebugInfo()
     {
-        return array (  50 => 15,  38 => 9,  33 => 7,  28 => 5,  23 => 2,  19 => 1,);
+        return array (  49 => 14,  38 => 9,  33 => 7,  28 => 5,  23 => 2,  19 => 1,);
     }
 }
 /* {% for comment in comments %}*/
 /*     <div class="slide-part">*/
-/*         <div class="portrait-block">*/
+/*         <div class="portrait-block has-shadow">*/
 /*             <div class="portrait">*/
 /*                 <img src="{{ comment['image'] }}">*/
 /*             </div>*/
@@ -75,7 +74,6 @@ class __TwigTemplate_06fde602e5328e07ff672aa9614a42e4a0205f87152e776737839d7f47d
 /*             <p class="description">*/
 /*                 {{ comment['description'] }}*/
 /*             </p>*/
-/*             <div class="description-underscore"></div>*/
 /*         </div>*/
 /*     </div>*/
 /* {% endfor %}*/

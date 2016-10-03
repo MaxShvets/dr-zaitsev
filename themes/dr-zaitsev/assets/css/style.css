@@ -53,8 +53,14 @@ button::-moz-focus-inner {
     height: auto;
 }
 
+.contacts-section .consultation-form-container, .has-shadow {
+    -webkit-box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.1);
+}
+
 .page-anchor {
-    position: absolute;
+    position: relative;
     top: 0;
 }
 
@@ -141,7 +147,7 @@ h2 {
     color: #fff;
 }
 
-.header-orange .navigation li:hover {
+.header-orange .navigation li:hover, .header .navigation .current  {
     color: #616161;
 }
 
@@ -165,7 +171,7 @@ h2 {
 }
 
 .top-section .page-anchor {
-    top: -95px;
+    top: 0;
 }
 
 .top-section .personal-page-container {
@@ -215,8 +221,8 @@ h2 {
 
 .personal-page .divider-line {
     width: 219px;
-    height: 4px;
-    margin: 45px 0 50px 0;
+    height: 1px;
+    margin: 47px 0 51px 0;
     background-color: #fff;
 }
 
@@ -229,6 +235,15 @@ h2 {
 
 .display-consult-button {
     visibility: visible;
+    -webkit-transition: background-color 200ms;
+    -moz-transition: background-color 200ms;
+    -ms-transition: background-color 200ms;
+    -o-transition: background-color 200ms;
+    transition: background-color 200ms;
+}
+
+.display-consult-button:hover {
+    background-color: #fe9736;
 }
 
 .orange-button {
@@ -237,7 +252,7 @@ h2 {
     background-color: #ffae61;
     -webkit-box-shadow: 0 2px 1px 0 #8c8c8c;
     -moz-box-shadow: 0 2px 1px 0 #8c8c8c;
-    box-shadow: 0 2px 1px 0 #8c8c8c;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .form-visible .display-consult-button {
@@ -427,12 +442,12 @@ h2 {
     z-index: 3;
 }
 
-.about-doctor-section {
-    position: relative;
+#about-doctor, #contacts {
+    top: 1px;
 }
 
-.about-doctor-section .page-anchor {
-    top: -95px;
+.about-doctor-section {
+    position: relative;
 }
 
 .about-doctor-header {
@@ -481,10 +496,9 @@ h2 {
 
 .portrait-block {
     margin: 0 auto;
-    padding: 33px 28px 45px 28px;
+    padding: 33px 28px 92px 28px;
     width: 390px;
-    box-shadow: 0 2px 2px 1px #ebebeb;
-    border: 1px solid #ebebeb;
+    border: 1px solid #fff;
     background-color: #fff;
 }
 
@@ -496,7 +510,6 @@ h2 {
     -moz-border-radius: 120px;
     border-radius: 120px;
     overflow: hidden;
-    border: 1px solid #58cae6;
 }
 
 .portrait-block .name {
@@ -512,18 +525,6 @@ h2 {
     font-size: 19px;
     text-align: center;
     line-height: 33px;
-}
-
-.portrait-block .description-underscore {
-    margin: 20px auto 34px auto;
-    width: 224px;
-    height: 2px;
-    background-color: #58cae6;
-    -webkit-transition: width 500ms, margin 500ms;
-    -moz-transition: width 500ms, margin 500ms;
-    -ms-transition: width 500ms, margin 500ms;
-    -o-transition: width 500ms, margin 500ms;
-    transition: width 500ms, margin 500ms;
 }
 
 .info-text {
@@ -582,6 +583,10 @@ h2 {
     color: #616161;
 }
 
+#comments {
+    top: 5px;
+}
+
 .comments-section {
     position: relative;
 }
@@ -590,20 +595,10 @@ h2 {
     padding-bottom: 63px;
 }
 
-.background-line {
-    width: 100%;
-    height: 6px;
-    position: absolute;
-    top: 272px;
-    -webkit-box-shadow:  0 3px 3px #ebebeb;
-    -moz-box-shadow:  0 3px 3px #ebebeb;
-    box-shadow: 0 4px 1px -1px #ebebeb;
-    z-index: -1;
-}
-
 .comments-slider {
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
+    padding-bottom: 148px;
 }
 
 .comments-slider .comments-moving-block {
@@ -623,6 +618,11 @@ h2 {
 
 .comments-slider .portrait-block {
     padding-top: 0;
+    -webkit-transition: padding 200ms;
+    -moz-transition: padding 200ms;
+    -ms-transition: padding 200ms;
+    -o-transition: padding 200ms;
+    transition: padding 200ms;
 }
 
 .comments-slider .portrait {
@@ -632,37 +632,20 @@ h2 {
 }
 
 .comments-slider .description {
-    margin-bottom: 45px;
-    max-height: 132px;
+    height: 132px;
     overflow: hidden;
-    -webkit-transition: max-height 500ms, margin 500ms 0ms;
-    -moz-transition: max-height 500ms, margin 500ms 0ms;
-    -ms-transition: max-height 500ms, margin 500ms 0ms;
-    -o-transition: max-height 500ms, margin 500ms 0ms;
-    transition: max-height 500ms, margin 500ms 0ms;
-}
-
-.comments-slider .description-underscore {
-    margin-top: 0;
-}
-
-.comments-slider .portrait-block:hover .description {
-    max-height: 330px;
-    margin-bottom: 0;
-    -webkit-transition: max-height 500ms, margin 500ms 500ms;
-    -moz-transition: max-height 500ms, margin 500ms 500ms;
-    -ms-transition: max-height 500ms, margin 500ms 500ms;
-    -o-transition: max-height 500ms, margin 500ms 500ms;
-    transition: max-height 500ms, margin 500ms 500ms;
-}
-
-.comments-slider .portrait-block:hover .description-underscore {
-    width: 0;
-    margin: 0 auto;
+    -webkit-transition: height 300ms;
+    -moz-transition: height 300ms;
+    -ms-transition: height 300ms;
+    -o-transition: height 300ms;
+    transition: height 300ms;
 }
 
 .comments-slider-controls {
-    margin: 67px auto;
+    position: absolute;
+    top: 501px;
+    left: 50%;
+    margin-left: -24px;
 }
 
 .slider-control {
@@ -680,6 +663,10 @@ h2 {
 .slider-control:hover,
 .active-pager-item {
     background-color: #ffae61;
+}
+
+#articles {
+    top: 80px;
 }
 
 .articles-section {
@@ -926,10 +913,6 @@ h2 {
     padding-bottom: 74px;
 }
 
-.contacts-section .page-anchor {
-    top: -95px;
-}
-
 .contacts-section h2 {
     padding-top: 73px;
     color: #fafeff;
@@ -967,10 +950,10 @@ h2 {
 }
 
 .contacts-section .consultation-form-container {
-    margin: 0 auto;
     -webkit-box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
 }
 
 @media (max-height: 650px), (max-width: 1259px) {

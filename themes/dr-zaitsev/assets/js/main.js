@@ -235,6 +235,74 @@ var assignDynamicEventHandlers = function (document) {
 
 };
 
+var segmentedScrollWithTracking = function (scroll, scrollingBlock, segments, navBlock) {
+
+    navBlock.click(function () {
+        var scrollTarget = segments.filter('#' + $(this).attr('data-to'));
+
+        scrollingBlock.animate({
+            scrollTop: scrollTarget.position().top
+        })
+    });
+
+    var getSegmentPositions = function () {
+        return segments.map(function () {
+            return $(this).position().top;
+        }).get();
+    };
+
+    var changeCurrent = function (newCurrent) {
+        navBlock.removeClass('current');
+        newCurrent.addClass('current');
+    };
+
+    var isCurrent = function (currentNum, currentScroll, positions) {
+        return positions[currentNum] < currentScroll + 1
+    };
+
+    var scrolledToBottom = function (currentScroll) {
+        var scrollingBlock = scroll.find('.scroll-moving-part');
+
+        if (scrollingBlock.length === 0) {
+            scrollingBlock = $('body');
+        }
+
+        return scrollingBlock.height() <= scroll.height() + currentScroll
+    };
+
+    var determineCurrentlyViewedSegment = function () {
+        var positions = getSegmentPositions();
+        var currentScroll = scroll.scrollTop();
+
+        if (scrolledToBottom(currentScroll)) {
+            changeCurrent(navBlock.last());
+            return
+        }
+
+        var currentSection = positions.length - 1;
+
+        while (!isCurrent(currentSection, currentScroll, positions) && currentSection > 0) {
+            currentSection -= 1;
+        }
+
+        changeCurrent(navBlock.eq(currentSection));
+    };
+
+    var scrollTimeout;
+
+    scroll.scroll(function () {
+        clearTimeout(scrollTimeout);
+
+        scrollTimeout = setTimeout(function () {
+            determineCurrentlyViewedSegment();
+        }, 50)
+    });
+
+    $(window).load(function () {
+        determineCurrentlyViewedSegment();
+    });
+};
+
 $(document).ready(function () {
 
     var doc = $(window);
@@ -255,7 +323,7 @@ $(document).ready(function () {
     var topSectionMoveLength = 60;
 
     $('.display-consult-button').click( function () {
-        animateCoverMovement( consultationCover.width() + topSectionMoveLength); // display consultation form
+        animateCoverMovement(consultationCover.width() + topSectionMoveLength); // display consultation form
         topSection.addClass('form-visible');
     } );
 
@@ -264,65 +332,13 @@ $(document).ready(function () {
         topSection.removeClass('form-visible');
     });
 
-    var pageAnchors = $('.page-anchor');
+    segmentedScrollWithTracking($(window), $('html, body'), $('.page-anchor'), $('.header .navigation li'));
 
-    $('.header .navigation li, .footer .navigation li').click(function () {
-        var hash = $(this).attr('data-to');
-        var anchor = pageAnchors.filter('#' + hash);
-        $('html, body').animate({
-            scrollTop: anchor.offset().top
-        }, 300);
-    });
+    var infoScroll = $('.info-scroll');
 
-    var doctorsInfo = $('.info-scroll');
-    var doctorsInfoSections = doctorsInfo.children('.info-section');
-    var doctorNav = $('.about-doctor-header li');
-
-    doctorNav.click(function () {
-        var scrollTarget = doctorsInfoSections.filter('#' + $(this).attr('data-to'));
-
-        doctorsInfo.animate({
-            scrollTop: scrollTarget.position().top + doctorsInfo.scrollTop()
-        })
-    });
-
-    var determineActiveInfoSection = function () {
-        var lastSection = doctorsInfoSections.last();
-
-        if (lastSection.height() + lastSection.position().top <= doctorsInfo.height() + 1) {
-            doctorNav.removeClass('current');
-            doctorNav.last().addClass('current');
-            return
-        }
-
-        var positions = doctorsInfoSections.map(function () {
-            return $(this).position().top;
-        }).get();
-
-        var heights = doctorsInfoSections.map(function () {
-            return $(this).height();
-        }).get();
-
-        var currentSection = 0;
-
-        while(currentSection < heights.length && (positions[currentSection] > 0 ||
-              Math.abs(positions[currentSection])) >= heights[currentSection]) {
-            currentSection += 1;
-        }
-
-        doctorNav.removeClass('current');
-        doctorNav.eq(currentSection).addClass('current');
-    };
-
-    var doctorsInfoScrollTimeout;
-
-    doctorsInfo.scroll(function () {
-        clearTimeout(doctorsInfoScrollTimeout);
-
-        doctorsInfoScrollTimeout = setTimeout(function () {
-            determineActiveInfoSection();
-        }, 50)
-    });
+    segmentedScrollWithTracking(
+        infoScroll, infoScroll, infoScroll.find('.info-section'), $('.about-doctor-header li')
+    );
 
     assignDynamicEventHandlers(doc);
 
@@ -371,7 +387,27 @@ $(document).ready(function () {
         toggleFormFocus(this, false);
     });
 
-    $(window).load(function () {
-       determineActiveInfoSection();
-    });
+    var comments = $('.comments-slider .portrait-block');
+    var collapsedHeight = 132;
+    var collapsedPadding = 92;
+    var hoverPadding = 42;
+
+    comments.hover(
+        function () {
+            var $this = $(this);
+            var description = $this.find('.description');
+            var fullHeight = description.height('auto').height();
+            description.height(collapsedHeight);
+
+            if (fullHeight > collapsedHeight) {
+                $this.css('padding-bottom', hoverPadding);
+                description.height(fullHeight);
+            }
+        },
+        function () {
+            var $this = $(this);
+
+            $this.find('.description').height(collapsedHeight);
+            $this.css('padding-bottom', collapsedPadding);
+        });
 });

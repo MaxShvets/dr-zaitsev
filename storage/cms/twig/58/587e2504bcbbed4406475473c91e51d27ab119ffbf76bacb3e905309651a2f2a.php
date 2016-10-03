@@ -16,8 +16,8 @@ class __TwigTemplate_17e0038ad82a7b55e56ef2b52cc2b9b5a37a73785ac4d2fda9444ae86a2
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<div class=\"top-section\">
-    <a id=\"top\" class=\"page-anchor\"></a>
+        echo "<a id=\"top\" class=\"page-anchor\"></a>
+<div class=\"top-section\">
     <div class=\"personal-page-container\">
         <div class=\"personal-page\">
             <h1>
@@ -53,8 +53,8 @@ class __TwigTemplate_17e0038ad82a7b55e56ef2b52cc2b9b5a37a73785ac4d2fda9444ae86a2
     <div style=\"clear: both;\"></div>
 </div>
 
+<a id=\"about-doctor\" class=\"page-anchor\"></a>
 <div class=\"about-doctor-section\">
-    <a id=\"about-doctor\" class=\"page-anchor\"></a>
     <div class=\"about-doctor-header\">
         ";
         // line 32
@@ -67,7 +67,7 @@ class __TwigTemplate_17e0038ad82a7b55e56ef2b52cc2b9b5a37a73785ac4d2fda9444ae86a2
 
     <div class=\"doctor-info-block\">
         <div class=\"portrait-container\">
-            <div class=\"portrait-block\">
+            <div class=\"portrait-block has-shadow\">
                 <div class=\"portrait\">
                     <img src=\"";
         // line 39
@@ -78,7 +78,6 @@ class __TwigTemplate_17e0038ad82a7b55e56ef2b52cc2b9b5a37a73785ac4d2fda9444ae86a2
                 <p class=\"description\">
                     Хирург высшей категории, онколог, психолог, специалист в области народной и нетрадиционной медицины
                 </p>
-                <div class=\"description-underscore\"></div>
             </div>
         </div>
 
@@ -86,83 +85,84 @@ class __TwigTemplate_17e0038ad82a7b55e56ef2b52cc2b9b5a37a73785ac4d2fda9444ae86a2
             <h2>о докторе</h2>
 
             <div class=\"info-scroll\">
-                <div id=\"main-directions\" class=\"info-section\">
-                    <p class=\"section-heading main-directions\">Основные направления</p>
+                <div class=\"scroll-moving-part\">
+                    <div id=\"main-directions\" class=\"info-section\">
+                        <p class=\"section-heading main-directions\">Основные направления</p>
 
-                    <p class=\"subsection-heading\">Лечение ран различного происхождения</p>
-                    <p class=\"text\">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
-                        Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
-                        congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
-                        lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
-                    </p>
+                        <p class=\"subsection-heading\">Лечение ран различного происхождения</p>
+                        <p class=\"text\">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
+                            Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
+                            congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
+                            lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
+                        </p>
 
-                    <p class=\"subsection-heading\">Кинезитерапия</p>
-                    <p class=\"text\">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
-                        Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
-                        congue. Sed volutpat sem non porttitor suscipit. Curabitur
-                    </p>
+                        <p class=\"subsection-heading\">Кинезитерапия</p>
+                        <p class=\"text\">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
+                            Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
+                            congue. Sed volutpat sem non porttitor suscipit. Curabitur
+                        </p>
+                    </div>
+
+                    <div id=\"medical-education\" class=\"info-section\">
+                        <p class=\"section-heading medical-education\">Медицинское образование</p>
+
+                        <p class=\"text\">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
+                            Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
+                            congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
+                            lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
+                        </p>
+                    </div>
+
+                    <div id=\"conference-participation\" class=\"info-section\">
+                        <p class=\"section-heading conference-participation\">Участие в конференциях</p>
+
+                        <p class=\"text\">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
+                            Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
+                            congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
+                            lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
+                        </p>
+                    </div>
+
+                    <div id=\"author-technique\" class=\"info-section\">
+                        <p class=\"section-heading author-technique\">Авторская методика</p>
+
+                        <p class=\"text\">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
+                            Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
+                            congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
+                            lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
+                        </p>
+                    </div>
                 </div>
-
-                <div id=\"medical-education\" class=\"info-section\">
-                    <p class=\"section-heading medical-education\">Медицинское образование</p>
-
-                    <p class=\"text\">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
-                        Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
-                        congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
-                        lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
-                    </p>
-                </div>
-
-                <div id=\"conference-participation\" class=\"info-section\">
-                    <p class=\"section-heading conference-participation\">Участие в конференциях</p>
-
-                    <p class=\"text\">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
-                        Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
-                        congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
-                        lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
-                    </p>
-                </div>
-
-                <div id=\"author-technique\" class=\"info-section\">
-                    <p class=\"section-heading author-technique\">Авторская методика</p>
-
-                    <p class=\"text\">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
-                        Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
-                        congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
-                        lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
-                    </p>
-                </div>
-                <div class=\"scroll-filler\"></div>
             </div>
         </div>
     </div>
 </div>
 
+<a id=\"comments\" class=\"page-anchor\"></a>
 <div class=\"comments-section\">
-    <a id=\"comments\" class=\"page-anchor\"></a>
     <h2>Отзывы</h2>
 
     <div class=\"comments-slider\">
-        <div class=\"background-line\"></div>
         <div class=\"comments-moving-block\">
             ";
-        // line 117
+        // line 116
         $context['__cms_partial_params'] = [];
         $context['__cms_partial_params']['comments'] = (isset($context["comments"]) ? $context["comments"] : null)        ;
         echo $this->env->getExtension('CMS')->partialFunction("commentsSlider"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 118
+        // line 117
         echo "        </div>
 
         <div class=\"comments-slider-controls\"></div>
     </div>
 </div>
 
+<a id=\"articles\" class=\"page-anchor\"></a>
 <div class=\"articles-section\">
     <div class=\"article-slider\">
         <div class=\"left-arrow clickable\">
@@ -196,13 +196,12 @@ class __TwigTemplate_17e0038ad82a7b55e56ef2b52cc2b9b5a37a73785ac4d2fda9444ae86a2
         <div class=\"slider\"></div>
     </div>
 
-    <a id=\"articles\" class=\"page-anchor\"></a>
     <h2>статьи</h2>
 
     <div class=\"first-warning\">
 
         <img class=\"warning-image\" src=\"";
-        // line 147
+        // line 146
         echo $this->env->getExtension('CMS')->themeFilter("assets/images/content-warning.png");
         echo "\">
         <p class=\"warning\">Вы уверены, что готовы просмотру фото реальных глубоких повреждений кожи?</p>
@@ -214,8 +213,8 @@ class __TwigTemplate_17e0038ad82a7b55e56ef2b52cc2b9b5a37a73785ac4d2fda9444ae86a2
     <div class=\"articles-catalogue\"></div>
 </div>
 
+<a id=\"contacts\" class=\"page-anchor\"></a>
 <div class=\"contacts-section\">
-    <a id=\"contacts\" class=\"page-anchor\"></a>
     <h2>Контакты</h2>
 
     <div class=\"contacts-container\">
@@ -241,12 +240,12 @@ class __TwigTemplate_17e0038ad82a7b55e56ef2b52cc2b9b5a37a73785ac4d2fda9444ae86a2
 
         <div class=\"form\">
             ";
-        // line 183
+        // line 182
         $context['__cms_partial_params'] = [];
         $context['__cms_partial_params']['can_hide'] = false        ;
         echo $this->env->getExtension('CMS')->partialFunction("contactForm"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 184
+        // line 183
         echo "        </div>
     </div>
 
@@ -267,11 +266,11 @@ class __TwigTemplate_17e0038ad82a7b55e56ef2b52cc2b9b5a37a73785ac4d2fda9444ae86a2
 
     public function getDebugInfo()
     {
-        return array (  250 => 184,  245 => 183,  206 => 147,  192 => 136,  188 => 135,  184 => 134,  177 => 130,  171 => 127,  160 => 118,  155 => 117,  74 => 39,  66 => 33,  61 => 32,  51 => 25,  46 => 22,  41 => 21,  19 => 1,);
+        return array (  249 => 183,  244 => 182,  205 => 146,  192 => 136,  188 => 135,  184 => 134,  177 => 130,  171 => 127,  159 => 117,  154 => 116,  74 => 39,  66 => 33,  61 => 32,  51 => 25,  46 => 22,  41 => 21,  19 => 1,);
     }
 }
+/* <a id="top" class="page-anchor"></a>*/
 /* <div class="top-section">*/
-/*     <a id="top" class="page-anchor"></a>*/
 /*     <div class="personal-page-container">*/
 /*         <div class="personal-page">*/
 /*             <h1>*/
@@ -298,15 +297,15 @@ class __TwigTemplate_17e0038ad82a7b55e56ef2b52cc2b9b5a37a73785ac4d2fda9444ae86a2
 /*     <div style="clear: both;"></div>*/
 /* </div>*/
 /* */
+/* <a id="about-doctor" class="page-anchor"></a>*/
 /* <div class="about-doctor-section">*/
-/*     <a id="about-doctor" class="page-anchor"></a>*/
 /*     <div class="about-doctor-header">*/
 /*         {% partial 'navigation' items=about_doctor_items %}*/
 /*     </div>*/
 /* */
 /*     <div class="doctor-info-block">*/
 /*         <div class="portrait-container">*/
-/*             <div class="portrait-block">*/
+/*             <div class="portrait-block has-shadow">*/
 /*                 <div class="portrait">*/
 /*                     <img src="{{ 'assets/images/zaytsev-photo.png'|theme }}">*/
 /*                 </div>*/
@@ -314,7 +313,6 @@ class __TwigTemplate_17e0038ad82a7b55e56ef2b52cc2b9b5a37a73785ac4d2fda9444ae86a2
 /*                 <p class="description">*/
 /*                     Хирург высшей категории, онколог, психолог, специалист в области народной и нетрадиционной медицины*/
 /*                 </p>*/
-/*                 <div class="description-underscore"></div>*/
 /*             </div>*/
 /*         </div>*/
 /* */
@@ -322,69 +320,69 @@ class __TwigTemplate_17e0038ad82a7b55e56ef2b52cc2b9b5a37a73785ac4d2fda9444ae86a2
 /*             <h2>о докторе</h2>*/
 /* */
 /*             <div class="info-scroll">*/
-/*                 <div id="main-directions" class="info-section">*/
-/*                     <p class="section-heading main-directions">Основные направления</p>*/
+/*                 <div class="scroll-moving-part">*/
+/*                     <div id="main-directions" class="info-section">*/
+/*                         <p class="section-heading main-directions">Основные направления</p>*/
 /* */
-/*                     <p class="subsection-heading">Лечение ран различного происхождения</p>*/
-/*                     <p class="text">*/
-/*                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.*/
-/*                         Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate*/
-/*                         congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue*/
-/*                         lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.*/
-/*                     </p>*/
+/*                         <p class="subsection-heading">Лечение ран различного происхождения</p>*/
+/*                         <p class="text">*/
+/*                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.*/
+/*                             Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate*/
+/*                             congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue*/
+/*                             lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.*/
+/*                         </p>*/
 /* */
-/*                     <p class="subsection-heading">Кинезитерапия</p>*/
-/*                     <p class="text">*/
-/*                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.*/
-/*                         Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate*/
-/*                         congue. Sed volutpat sem non porttitor suscipit. Curabitur*/
-/*                     </p>*/
+/*                         <p class="subsection-heading">Кинезитерапия</p>*/
+/*                         <p class="text">*/
+/*                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.*/
+/*                             Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate*/
+/*                             congue. Sed volutpat sem non porttitor suscipit. Curabitur*/
+/*                         </p>*/
+/*                     </div>*/
+/* */
+/*                     <div id="medical-education" class="info-section">*/
+/*                         <p class="section-heading medical-education">Медицинское образование</p>*/
+/* */
+/*                         <p class="text">*/
+/*                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.*/
+/*                             Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate*/
+/*                             congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue*/
+/*                             lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.*/
+/*                         </p>*/
+/*                     </div>*/
+/* */
+/*                     <div id="conference-participation" class="info-section">*/
+/*                         <p class="section-heading conference-participation">Участие в конференциях</p>*/
+/* */
+/*                         <p class="text">*/
+/*                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.*/
+/*                             Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate*/
+/*                             congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue*/
+/*                             lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.*/
+/*                         </p>*/
+/*                     </div>*/
+/* */
+/*                     <div id="author-technique" class="info-section">*/
+/*                         <p class="section-heading author-technique">Авторская методика</p>*/
+/* */
+/*                         <p class="text">*/
+/*                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.*/
+/*                             Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate*/
+/*                             congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue*/
+/*                             lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.*/
+/*                         </p>*/
+/*                     </div>*/
 /*                 </div>*/
-/* */
-/*                 <div id="medical-education" class="info-section">*/
-/*                     <p class="section-heading medical-education">Медицинское образование</p>*/
-/* */
-/*                     <p class="text">*/
-/*                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.*/
-/*                         Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate*/
-/*                         congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue*/
-/*                         lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.*/
-/*                     </p>*/
-/*                 </div>*/
-/* */
-/*                 <div id="conference-participation" class="info-section">*/
-/*                     <p class="section-heading conference-participation">Участие в конференциях</p>*/
-/* */
-/*                     <p class="text">*/
-/*                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.*/
-/*                         Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate*/
-/*                         congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue*/
-/*                         lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.*/
-/*                     </p>*/
-/*                 </div>*/
-/* */
-/*                 <div id="author-technique" class="info-section">*/
-/*                     <p class="section-heading author-technique">Авторская методика</p>*/
-/* */
-/*                     <p class="text">*/
-/*                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.*/
-/*                         Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate*/
-/*                         congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue*/
-/*                         lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.*/
-/*                     </p>*/
-/*                 </div>*/
-/*                 <div class="scroll-filler"></div>*/
 /*             </div>*/
 /*         </div>*/
 /*     </div>*/
 /* </div>*/
 /* */
+/* <a id="comments" class="page-anchor"></a>*/
 /* <div class="comments-section">*/
-/*     <a id="comments" class="page-anchor"></a>*/
 /*     <h2>Отзывы</h2>*/
 /* */
 /*     <div class="comments-slider">*/
-/*         <div class="background-line"></div>*/
 /*         <div class="comments-moving-block">*/
 /*             {% partial 'commentsSlider' comments=comments %}*/
 /*         </div>*/
@@ -393,6 +391,7 @@ class __TwigTemplate_17e0038ad82a7b55e56ef2b52cc2b9b5a37a73785ac4d2fda9444ae86a2
 /*     </div>*/
 /* </div>*/
 /* */
+/* <a id="articles" class="page-anchor"></a>*/
 /* <div class="articles-section">*/
 /*     <div class="article-slider">*/
 /*         <div class="left-arrow clickable">*/
@@ -411,7 +410,6 @@ class __TwigTemplate_17e0038ad82a7b55e56ef2b52cc2b9b5a37a73785ac4d2fda9444ae86a2
 /*         <div class="slider"></div>*/
 /*     </div>*/
 /* */
-/*     <a id="articles" class="page-anchor"></a>*/
 /*     <h2>статьи</h2>*/
 /* */
 /*     <div class="first-warning">*/
@@ -426,8 +424,8 @@ class __TwigTemplate_17e0038ad82a7b55e56ef2b52cc2b9b5a37a73785ac4d2fda9444ae86a2
 /*     <div class="articles-catalogue"></div>*/
 /* </div>*/
 /* */
+/* <a id="contacts" class="page-anchor"></a>*/
 /* <div class="contacts-section">*/
-/*     <a id="contacts" class="page-anchor"></a>*/
 /*     <h2>Контакты</h2>*/
 /* */
 /*     <div class="contacts-container">*/

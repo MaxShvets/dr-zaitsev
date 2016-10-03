@@ -85,8 +85,8 @@ function onConsultationRequest()
 }
 ?>
 ==
+<a id="top" class="page-anchor"></a>
 <div class="top-section">
-    <a id="top" class="page-anchor"></a>
     <div class="personal-page-container">
         <div class="personal-page">
             <h1>
@@ -113,15 +113,15 @@ function onConsultationRequest()
     <div style="clear: both;"></div>
 </div>
 
+<a id="about-doctor" class="page-anchor"></a>
 <div class="about-doctor-section">
-    <a id="about-doctor" class="page-anchor"></a>
     <div class="about-doctor-header">
         {% partial 'navigation' items=about_doctor_items %}
     </div>
 
     <div class="doctor-info-block">
         <div class="portrait-container">
-            <div class="portrait-block">
+            <div class="portrait-block has-shadow">
                 <div class="portrait">
                     <img src="{{ 'assets/images/zaytsev-photo.png'|theme }}">
                 </div>
@@ -129,7 +129,6 @@ function onConsultationRequest()
                 <p class="description">
                     Хирург высшей категории, онколог, психолог, специалист в области народной и нетрадиционной медицины
                 </p>
-                <div class="description-underscore"></div>
             </div>
         </div>
 
@@ -137,69 +136,69 @@ function onConsultationRequest()
             <h2>о докторе</h2>
 
             <div class="info-scroll">
-                <div id="main-directions" class="info-section">
-                    <p class="section-heading main-directions">Основные направления</p>
+                <div class="scroll-moving-part">
+                    <div id="main-directions" class="info-section">
+                        <p class="section-heading main-directions">Основные направления</p>
 
-                    <p class="subsection-heading">Лечение ран различного происхождения</p>
-                    <p class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
-                        Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
-                        congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
-                        lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
-                    </p>
+                        <p class="subsection-heading">Лечение ран различного происхождения</p>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
+                            Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
+                            congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
+                            lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
+                        </p>
 
-                    <p class="subsection-heading">Кинезитерапия</p>
-                    <p class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
-                        Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
-                        congue. Sed volutpat sem non porttitor suscipit. Curabitur
-                    </p>
+                        <p class="subsection-heading">Кинезитерапия</p>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
+                            Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
+                            congue. Sed volutpat sem non porttitor suscipit. Curabitur
+                        </p>
+                    </div>
+
+                    <div id="medical-education" class="info-section">
+                        <p class="section-heading medical-education">Медицинское образование</p>
+
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
+                            Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
+                            congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
+                            lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
+                        </p>
+                    </div>
+
+                    <div id="conference-participation" class="info-section">
+                        <p class="section-heading conference-participation">Участие в конференциях</p>
+
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
+                            Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
+                            congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
+                            lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
+                        </p>
+                    </div>
+
+                    <div id="author-technique" class="info-section">
+                        <p class="section-heading author-technique">Авторская методика</p>
+
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
+                            Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
+                            congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
+                            lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
+                        </p>
+                    </div>
                 </div>
-
-                <div id="medical-education" class="info-section">
-                    <p class="section-heading medical-education">Медицинское образование</p>
-
-                    <p class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
-                        Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
-                        congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
-                        lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
-                    </p>
-                </div>
-
-                <div id="conference-participation" class="info-section">
-                    <p class="section-heading conference-participation">Участие в конференциях</p>
-
-                    <p class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
-                        Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
-                        congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
-                        lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
-                    </p>
-                </div>
-
-                <div id="author-technique" class="info-section">
-                    <p class="section-heading author-technique">Авторская методика</p>
-
-                    <p class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat est non sem molestie venenatis.
-                        Mauris ac est at neque placerat efficitur laoreet et nulla. Integer placerat sapien laoreet dolor vulputate
-                        congue. Sed volutpat sem non porttitor suscipit. Curabitur viverra pellentesque nisi, in dapibus augue
-                        lacinia ut. Curabitur convallis quis risus tempus ullamcorper. Aenean in sagittis enim.
-                    </p>
-                </div>
-                <div class="scroll-filler"></div>
             </div>
         </div>
     </div>
 </div>
 
+<a id="comments" class="page-anchor"></a>
 <div class="comments-section">
-    <a id="comments" class="page-anchor"></a>
     <h2>Отзывы</h2>
 
     <div class="comments-slider">
-        <div class="background-line"></div>
         <div class="comments-moving-block">
             {% partial 'commentsSlider' comments=comments %}
         </div>
@@ -208,6 +207,7 @@ function onConsultationRequest()
     </div>
 </div>
 
+<a id="articles" class="page-anchor"></a>
 <div class="articles-section">
     <div class="article-slider">
         <div class="left-arrow clickable">
@@ -226,7 +226,6 @@ function onConsultationRequest()
         <div class="slider"></div>
     </div>
 
-    <a id="articles" class="page-anchor"></a>
     <h2>статьи</h2>
 
     <div class="first-warning">
@@ -241,8 +240,8 @@ function onConsultationRequest()
     <div class="articles-catalogue"></div>
 </div>
 
+<a id="contacts" class="page-anchor"></a>
 <div class="contacts-section">
-    <a id="contacts" class="page-anchor"></a>
     <h2>Контакты</h2>
 
     <div class="contacts-container">

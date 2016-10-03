@@ -1,8 +1,8 @@
-1474987168a:1:{s:18:"commentsSlider.htm";a:6:{s:8:"fileName";s:18:"commentsSlider.htm";s:7:"content";s:520:"description = 'slider with comments'
+1475193635a:1:{s:18:"commentsSlider.htm";a:6:{s:8:"fileName";s:18:"commentsSlider.htm";s:7:"content";s:476:"description = 'slider with comments'
 ==
 {% for comment in comments %}
     <div class="slide-part">
-        <div class="portrait-block">
+        <div class="portrait-block has-shadow">
             <div class="portrait">
                 <img src="{{ comment['image'] }}">
             </div>
@@ -10,14 +10,13 @@
             <p class="description">
                 {{ comment['description'] }}
             </p>
-            <div class="description-underscore"></div>
         </div>
     </div>
 {% endfor %}
 <div style="clear: both;"></div>
-";s:5:"mtime";i:1469698318;s:6:"markup";s:479:"{% for comment in comments %}
+";s:5:"mtime";i:1474996727;s:6:"markup";s:435:"{% for comment in comments %}
     <div class="slide-part">
-        <div class="portrait-block">
+        <div class="portrait-block has-shadow">
             <div class="portrait">
                 <img src="{{ comment['image'] }}">
             </div>
@@ -25,7 +24,6 @@
             <p class="description">
                 {{ comment['description'] }}
             </p>
-            <div class="description-underscore"></div>
         </div>
     </div>
 {% endfor %}
